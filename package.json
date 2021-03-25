@@ -1,18 +1,11 @@
 {
-    "title": "Resume",
-    "name": "startbootstrap-resume",
-    "version": "6.0.2",
+    "title": "Landing Page",
+    "name": "startbootstrap-landing-page",
+    "version": "5.0.9",
     "scripts": {
-        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
-        "build:assets": "node scripts/build-assets.js",
-        "build:pug": "node scripts/build-pug.js",
-        "build:scripts": "node scripts/build-scripts.js",
-        "build:scss": "node scripts/build-scss.js",
-        "clean": "node scripts/clean.js",
-        "start": "npm run build && node scripts/start.js",
-        "start:debug": "npm run build && node scripts/start-debug.js"
+        "start": "node_modules/.bin/gulp watch"
     },
-    "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
+    "description": "An HTML landing page template built with Bootstrap",
     "keywords": [
         "css",
         "sass",
@@ -21,9 +14,9 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/theme/resume",
+    "homepage": "https://startbootstrap.com/theme/landing-page",
     "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-resume/issues",
+        "url": "https://github.com/StartBootstrap/startbootstrap-landing-page/issues",
         "email": "feedback@startbootstrap.com"
     },
     "license": "MIT",
@@ -33,20 +26,24 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-resume.git"
+        "url": "https://github.com/StartBootstrap/startbootstrap-landing-page.git"
     },
     "dependencies": {
-        "bootstrap": "4.5.3"
+        "@fortawesome/fontawesome-free": "5.15.1",
+        "bootstrap": "4.5.3",
+        "jquery": "3.5.1",
+        "simple-line-icons": "2.5.5"
     },
     "devDependencies": {
-        "autoprefixer": "10.0.1",
         "browser-sync": "2.26.13",
-        "chokidar": "3.4.3",
-        "concurrently": "5.3.0",
-        "postcss": "8.1.4",
-        "prettier": "2.1.2",
-        "pug": "3.0.0",
-        "sass": "1.28.0",
-        "shelljs": "0.8.4"
+        "del": "6.0.0",
+        "gulp": "4.0.2",
+        "gulp-autoprefixer": "7.0.1",
+        "gulp-clean-css": "4.3.0",
+        "gulp-header": "2.0.9",
+        "gulp-plumber": "^1.2.1",
+        "gulp-rename": "2.0.0",
+        "gulp-sass": "4.1.0",
+        "merge-stream": "2.0.0"
     }
 }
